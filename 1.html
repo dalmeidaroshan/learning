@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <!--<meta http-equiv="refresh" content="30">-->
+    <link rel="stylesheet" href="1.css">
+    <script type="text/javascript" src="1.js"></script>
+
+    <script language="javascript">
+    function doAdd()
+    {
+        alert(add(parseInt(gel("c1").value),parseInt(gel("c2").value)));
+
+    }
+
+    function funcSub()
+    { 
+       alert("form is submitting");  
+       /*if(gel('c1').value == "") {
+           return false;
+       }
+       consol.log("this is test");*/
+       return false;
+    }
+    </script>
+  </head>
+
+  <body>
+    <div class="divColor">
+      this is div1
+
+    </div>
+
+    <div>
+        this is div 2
+    </div>
+
+    <br>
+
+    <span>this1</span>
+    <span class="spanColor">this2</span>
+   <!-- <form id="frmMain" onSubmit="alert('aya')" action="1.html" >
+      <input type="text" name="c1" id="c1"/> <br>
+      <input type="text" name="c2" id="c2"/> <br>
+      <input type="button" name="cid" id="cid" onclick="funcForm()" value="Send"/>
+    </form> -->
+
+
+    <form id="frmMain" onSubmit="funcSub()" action="1.html" >
+    <input type="text" name="c1" id="c1"/> <br>
+    <input type="text" name="c2" id="c2"/> <br>
+    <input type="submit" name="cid" id="cid" value="Send"/>
+    </form>
+
+    <script>
+    function funcForm(){
+     
+        document.forms['frmMain'].submit();
+
+    }
+    </script>
+  </body>
+</html>
